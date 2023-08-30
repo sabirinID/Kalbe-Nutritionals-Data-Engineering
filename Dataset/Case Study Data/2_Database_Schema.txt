@@ -1,0 +1,28 @@
+Study Case #2
+Database Schema
+
+Sebagai Data Engineer di Kalbe Nutritionals, kamu diharapkan
+untuk merancang data warehouse baru yang memiliki schema optimal
+untuk melakukan query dan analisis dengan efisiensi maksimum.
+Tabel yang diinginkan beserta kolomnya sudah disediakan, tetapi
+kamu juga diminta untuk membuat visualisasi rancangan dan relasi
+antartabel.
+
+Detail dari kedua data model adalah sebagai berikut:
+
+1. Star Schema			:
+	transaksi_penjualan	: kuantitas, jumlah
+	produk			: nama_obat, deskripsi, dibuat_oleh
+	tanggal_produksi	: tanggal, bulan, tahun
+	lokasi			: toko, kota, provinsi
+	pelanggan		: nama, alamat
+
+2. Fact Constellation Schema	:
+	transaksi_penjualan	: kuantitas, harga, total
+	inventori		: jumlah_stok
+	produk			: nama_obat, deskripsi, dibuat_oleh
+	tanggal_produksi	: tanggal, bulan, tahun
+	lokasi			: toko, kota, provinsi
+
+Referensi:
+https://www.ibm.com/id-en/topics/database-schema
